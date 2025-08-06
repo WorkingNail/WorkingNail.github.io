@@ -1124,3 +1124,16 @@ pre {
     display: inline-block;
   }
 }
+
+/* ↓画像サイズ調整（ボタン・プロフィール画像など） */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button-image {
+  width: 180px; /* 好みでサイズ調整OK */
+  height: auto;
+  margin: 0 10px;
+}
+
