@@ -1,37 +1,51 @@
-<!-- 🔧 ① 編集ファイル：/index.html -->
-<header class="top-banner">
-  <div class="container">
-    <div class="header-inner">
-      <!-- 左：SNSアイコン（プロフィール画像） -->
-      <div class="logo">
-        <img src="/assets/images/profile-icon.png" alt="Profile Icon" class="profile-icon">
-      </div>
+<!-- ✅ index.html（修正案） -->
+<!DOCTYPE html>
+<html lang="ja">
 
-      <!-- 中央：タイトル -->
-      <div class="site-title">Working nail 働き爪</div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Working Nail - 働き爪</title>
+  <link rel="stylesheet" href="assets/css/beautifuljekyll.css">
+</head>
 
-      <!-- 下段：Blog / Support 横並び画像リンク -->
-      <div class="link-buttons">
-        <a href="/blog" class="link-button">
-          <img src="/assets/images/blog-button.png" alt="Blog Button" class="button-image">
-        </a>
-        <a href="/support" class="link-button">
-          <img src="/assets/images/support-button.png" alt="Support Button" class="button-image">
-        </a>
+<body>
+  <!-- 🔻 バナー部分 -->
+  <header class="top-banner">
+    <img src="assets/images/banner.png" alt="Working Nail バナー" class="banner-image">
+  </header>
+
+  <!-- 🔻 プロフィールセクション -->
+  <section class="profile-section">
+    <div class="profile-header">プロフィール Profile</div>
+    <div class="profile-body">
+      <img src="assets/images/profile-icon.png" alt="プロフィールアイコン" class="profile-icon">
+      <div class="profile-bubble">
+        <p>1997 / Japan / 一児の父 (Father of one)<br>
+          求人広告の営業・ライター (Ad sales & writer)<br>
+          働きながら、爪を治す記録を公開中。<br>
+          Blog ▶ <a href="https://workingnail.github.io/">workingnail.github.io</a>
+        </p>
       </div>
     </div>
-  </div>
-</header>
+  </section>
 
-<!-- ✅ プロフィールセクション（ページ最下部） -->
-<section class="profile-section">
-  <div class="profile-header">プロフィール Profile</div>
-  <div class="profile-body">
-    <img src="/assets/images/profile-icon.png" alt="プロフィールアイコン" class="profile-icon">
-    <div class="profile-bubble">
-      1997 / Japan / 一児の父 (Father of one)<br>
-      求人広告の営業・ライター (Ad sales & copywriting)<br>
-      ADHD / 常識破り (Pattern-breaker)
-    </div>
-  </div>
-</section>
+  <!-- 🔻 ボタンセクション -->
+  <section class="button-section">
+    <a href="https://note.com/workingnail" target="_blank">
+      <img src="assets/images/note.png" alt="note" class="button-image">
+    </a>
+    <a href="https://www.youtube.com/@workingnail" target="_blank">
+      <img src="assets/images/youtube.png" alt="YouTube" class="button-image">
+    </a>
+    <a href="https://www.tiktok.com/@workingnail" target="_blank">
+      <img src="assets/images/tiktok.png" alt="TikTok" class="button-image">
+    </a>
+    <a href="https://x.com/workingnail" target="_blank">
+      <img src="assets/images/x.png" alt="X" class="button-image">
+    </a>
+  </section>
+
+</body>
+
+</html>
