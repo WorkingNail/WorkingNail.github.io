@@ -1137,4 +1137,11 @@ img {
   margin: 0 8px;
 }
 
+/* プロフィール画像のサイズ調整 */
+.profile-icon {
+  width: 140px;
+  height: auto;
+  margin: 0 8px;
+}
+
 
