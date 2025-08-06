@@ -1,51 +1,76 @@
-<!-- ✅ index.html（修正案） -->
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Working Nail - 働き爪</title>
-  <link rel="stylesheet" href="assets/css/beautifuljekyll.css">
+    <title>profile | Working Nail 働き爪</title>
+  <style>
+    body {
+      background-color: #202123;
+      color: #fff;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .container {
+      padding: 40px 20px;
+    }
+    .profile-icon {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+    .profile-text {
+      margin-top: 20px;
+      line-height: 1.8;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .highlight {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px 0;
+      flex-wrap: wrap;
+    }
+    .button-container a {
+      background-color: #fff;
+      color: #202123;
+      text-decoration: none;
+      padding: 10px 30px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .button-container a:hover {
+      background-color: #ddd;
+    }
+  </style>
 </head>
-
 <body>
-  <!-- 🔻 バナー部分 -->
-  <header class="top-banner">
-    <img src="assets/images/banner.png" alt="Working Nail バナー" class="banner-image">
-  </header>
+  <div class="container">
+    <img src="profile-icon.png" alt="プロフィール画像" class="profile-icon">
 
-  <!-- 🔻 プロフィールセクション -->
-  <section class="profile-section">
-    <div class="profile-header">プロフィール Profile</div>
-    <div class="profile-body">
-      <img src="assets/images/profile-icon.png" alt="プロフィールアイコン" class="profile-icon">
-      <div class="profile-bubble">
-        <p>1997 / Japan / 一児の父 (Father of one)<br>
-          求人広告の営業・ライター (Ad sales & writer)<br>
-          働きながら、爪を治す記録を公開中。<br>
-          Blog ▶ <a href="https://workingnail.github.io/">workingnail.github.io</a>
-        </p>
+    <div class="profile-text">
+      <div class="highlight">1997 / Japan / 一児の父 (Father of one)</div>
+      求人広告の営業・ライター (Ad sales & writer)<br>
+      <div class="highlight" style="margin-top: 10px;">
+        覚悟と証明と言語化のアカウント。<br>
+        <span style="font-size: 14px; font-weight: normal;">An account for commitment, evidence, and expression.</span>
       </div>
     </div>
-  </section>
 
-  <!-- 🔻 ボタンセクション -->
-  <section class="button-section">
-    <a href="https://note.com/workingnail" target="_blank">
-      <img src="assets/images/note.png" alt="note" class="button-image">
-    </a>
-    <a href="https://www.youtube.com/@workingnail" target="_blank">
-      <img src="assets/images/youtube.png" alt="YouTube" class="button-image">
-    </a>
-    <a href="https://www.tiktok.com/@workingnail" target="_blank">
-      <img src="assets/images/tiktok.png" alt="TikTok" class="button-image">
-    </a>
-    <a href="https://x.com/workingnail" target="_blank">
-      <img src="assets/images/x.png" alt="X" class="button-image">
-    </a>
-  </section>
-
+    <div class="button-container">
+      <a href="blog.html">Blog</a>
+      <a href="support.html">Support</a>
+    </div>
+  </div>
 </body>
-
 </html>
