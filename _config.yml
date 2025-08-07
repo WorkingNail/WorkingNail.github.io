@@ -1,47 +1,40 @@
 title: 働き爪
 author: Working Nail
-baseurl: ""
+description: A site for deep nail healing
+baseurl: "" # サブディレクトリなしなら空欄でOK
+url: "https://workingnail.github.io" # 必ずあなたのGitHub Pages URLに変更
 
-navbar-links:
-  応援ページ: "aboutme"
-  ブログ一覧: "index"
+permalink: pretty
 
-avatar: "/assets/img/avatar-icon.png"
-round-avatar: true
+theme: minima
 
-social-network-links:
-  email: "someone@example.com"
-  rss: true
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: "@daattali"
-  whatsapp: 15551212
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
-rss-description: This website is a virtual proof that I'm awesome
+markdown: kramdown
+highlighter: rouge
 
-share-links-active:
-  twitter: true
-  facebook: true
-  linkedin: true
-  vk: false
-  reddit: false
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - LICENSE
+  - screenshot.png
+  - CHANGELOG.md
+  - docs/
 
-url-pretty: "MyWebsite.com"
-title-on-all-pages: true
-excerpt_length: 50
-feed_show_excerpt: true
-feed_show_tags: true
-post_search: true
-edit_page_button: true
-navbar-var-length: false
-
-page-col: "#FFFFFF"
-text-col: "#404040"
-link-col: "#008AFF"
-hover-col: "#0085A1"
-navbar-col: "#EAEAEA"
-navbar-text-col: "#404040"
-navbar-border-col: "#DDDDDD"
-footer
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: null
+  -
+    scope:
+      path: ""
+    values:
+      layout: null
