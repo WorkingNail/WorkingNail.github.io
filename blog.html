@@ -4,18 +4,15 @@ title: ブログ
 permalink: /blog/
 ---
 
-<div class="blog-header">
-  <img src="{{ site.baseurl }}/assets/images/blog-banner-v1.jpg" alt="ブログバナー" class="blog-banner" style="width: 100%; height: auto;">
-</div>
+<!-- 黒背景・中央寄せのデザイン -->
+<div style="background-color: #1c1c1c; color: white; text-align: center; padding: 3rem 1rem; min-height: 90vh;">
 
-<div class="blog-posts" style="padding: 2rem;">
-  <h2>記事一覧</h2>
-  <ul>
-    {% for post in site.posts %}
-      <li style="margin-bottom: 1rem;">
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><br>
-        <small>{{ post.date | date: "%Y年%m月%d日" }}</small>
-      </li>
-    {% endfor %}
-  </ul>
+  <!-- 画像クリックでトップへ戻る -->
+  <a href="{{ site.baseurl }}/">
+    <img src="{{ site.baseurl }}/assets/images/avatar-icon.png" alt="トップページへ" style="width: 150px; height: 150px; border-radius: 50%; border: 3px solid white; box-shadow: 0 0 10px rgba(255,255,255,0.5); margin-bottom: 2rem;">
+  </a>
+
+  <h2 style="font-weight: bold;">このページにはまだ記事がありません</h2>
+  <p style="opacity: 0.7;">（または今は記事を非公開にしています）</p>
+
 </div>
