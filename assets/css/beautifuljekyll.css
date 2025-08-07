@@ -1181,5 +1181,35 @@ img {
   margin: 10px;
 }
 
+.button-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.button-link {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.button-link img {
+  width: 160px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.button-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  pointer-events: none;
+}
+
 
 
