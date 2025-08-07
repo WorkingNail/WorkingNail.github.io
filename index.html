@@ -16,30 +16,32 @@
     .container {
       padding: 40px 20px;
     }
-    .profile-icon {
+    .profile-image {
       width: 150px;
       height: 150px;
       object-fit: cover;
       border-radius: 50%;
       border: 2px solid #fff;
     }
-    .profile-text {
+    .section-title {
       margin-top: 20px;
-      line-height: 1.8;
-      font-size: 16px;
-      font-weight: 400;
-    }
-    .sub-info {
-      font-size: 16px;
-      margin: 5px 0;
-    }
-    .resolve {
-      margin-top: 20px;
-      font-size: 20px;
+      font-size: 24px;
       font-weight: bold;
     }
-    .catch-copy {
-      margin-top: 15px;
+    .profile-text {
+      margin-top: 20px;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    .profile-text .ja {
+      margin-bottom: 6px;
+    }
+    .profile-text .en {
+      font-size: 14px;
+      color: #ccc;
+    }
+    .catchcopy {
+      margin-top: 20px;
       font-size: 18px;
       font-weight: bold;
     }
@@ -66,32 +68,17 @@
 </head>
 <body>
   <div class="container">
-    <img src="assets/images/profile-icon.png" alt="プロフィール画像" class="profile-icon">
-    
-    <div class="resolve">Profile</div>
-    
-    <div class="container">
-  <img src="your-profile-image.jpg" alt="Profile Image" class="profile-image">
-  
-  <h1 class="heading">Profile</h1>
-
-  <div class="sub-info">1997 / JAPAN</div>
-  
-  <div class="sub-info">一児の父</div>
-  <div class="sub-info en">Father of one</div>
-
-  <div class="sub-info">求人広告の営業・ライター</div>
-  <div class="sub-info en">Ad sales & writer</div>
-
-  <div class="description">An account that proves my resolve</div>
-
-  <a href="blog.html" class="button">Blog</a>
-  <a href="support.html" class="button">Support</a>
-</div>
-
-    
-    <div class="catch-copy">An account that proves my resolve</div>
-
+    <img src="assets/images/profile-icon.png" alt="Profile Image" class="profile-image">
+    <div class="section-title">Profile</div>
+    <div class="profile-text">
+      <div class="ja">1997 / JAPAN</div>
+      <div class="en">1997 / JAPAN</div>
+      <div class="ja">一児の父</div>
+      <div class="en">Father of one</div>
+      <div class="ja">求人広告の営業・ライター</div>
+      <div class="en">Ad sales & writer</div>
+    </div>
+    <div class="catchcopy">An account that proves my resolve</div>
     <div class="button-container">
       <a href="blog.html">Blog</a>
       <a href="support.html">Support</a>
