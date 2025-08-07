@@ -5,15 +5,15 @@ permalink: /blog/
 ---
 
 <div class="blog-header">
-  <img src="/assets/images/blog-banner-v1.jpg" alt="ブログバナー" class="blog-banner">
+  <img src="{{ site.baseurl }}/assets/images/blog-banner-v1.jpg" alt="ブログバナー" class="blog-banner" style="width: 100%; height: auto;">
 </div>
 
-<div class="blog-posts">
+<div class="blog-posts" style="padding: 2rem;">
   <h2>記事一覧</h2>
   <ul>
     {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a><br>
+      <li style="margin-bottom: 1rem;">
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><br>
         <small>{{ post.date | date: "%Y年%m月%d日" }}</small>
       </li>
     {% endfor %}
